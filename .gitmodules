@@ -1,3 +1,3 @@
-[submodule "worldgames"]
-	path = worldgames
+[submodule "wordgames"]
+	path = wordgames
 	url = git@github.com:artemyr/wordgames.git
