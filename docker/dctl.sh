@@ -190,6 +190,7 @@ if [ "$1" == "db" ];
         then
         rm -rf "../docker/data/mysql/dump" || echo "old dump not found"
         git clone $DATABASE_REPO ../docker/data/mysql/dump
+        tar -xvf "../docker/data/mysql/dump/database.tar.bz2" -C "../docker/data/mysql/dump/"
         applyDump "../docker/containers/mysql/drop_all_tables.sql"
         applyDump "../docker/data/mysql/dump/database.sql"
     fi
