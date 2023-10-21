@@ -1,4 +1,4 @@
-FROM digitalds/mysql:5.7.0
+FROM mysql
 
 ARG USER_ID='1000'
 ARG USER_ID=${USER_ID}

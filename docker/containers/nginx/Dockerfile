@@ -1,4 +1,4 @@
-FROM digitalds/nginx
+FROM nginx
 
 ARG APP_ENV='prod'
 ARG APP_ENV=${APP_ENV}
